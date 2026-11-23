@@ -1,0 +1,14 @@
+name: SleepPlus
+version: 1.0.0
+main: dev.sleepplus.SleepPlus
+api-version: "26.3"
+description: Skip the night with a configurable number of sleeping players.
+commands:
+  sleepplus:
+    description: Manage SleepPlus
+    usage: /sleepplus <reload|status|set>
+    aliases: [sp]
+permissions:
+  sleepplus.admin:
+    description: Allows managing SleepPlus
+    default: op

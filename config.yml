@@ -1,0 +1,24 @@
+# How many players must be asleep to skip the night?
+#   COUNT   -> a fixed number of players (1 = classic "one player sleep")
+#   PERCENT -> a percentage of eligible players in the world
+required:
+  mode: COUNT
+  count: 1
+  percent: 50
+
+# Ticks a player must be in bed before they count (vanilla uses 100, max 100).
+sleep-delay-ticks: 100
+
+# Clear rain/thunder when the night is skipped.
+clear-weather: true
+
+# Tell the world when someone gets into bed.
+announce-sleeping: true
+
+# MiniMessage format. Placeholders: <player> <sleeping> <required>
+messages:
+  sleeping: "<yellow><player> is sleeping <gray>(<sleeping>/<required>)"
+  skipped: "<gold>Rise and shine! The night has been skipped."
+  reloaded: "<green>SleepPlus config reloaded."
+  no-permission: "<red>You don't have permission."
+  usage: "<red>Usage: /sleepplus <reload|status|set <count|percent> <value>>"
